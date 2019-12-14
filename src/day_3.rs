@@ -16,7 +16,7 @@ struct Move {
 
 fn manhattan_distance(point_1: &Point, point_2: &Point) -> u32 {
      let x = point_2.x - point_1.x;
-     let y = point_2.y - point_2.y;
+     let y = point_2.y - point_1.y;
      (x + y).abs() as u32
 }
 
@@ -102,7 +102,7 @@ mod tests {
         const POINT_1: Point = Point {x: 0, y: 0};
         const POINT_2: Point = Point {x: 1, y: 1};
         const POINT_3: Point = Point {x: 1, y: 0};
-        const POINT_4: Point = Point {x: 1, y: 0};
+        const POINT_4: Point = Point {x: 0, y: 1};
 
         let distance = manhattan_distance(&POINT_1, &POINT_2);
         assert_eq!(distance, 2);
@@ -119,7 +119,7 @@ mod tests {
         const POINT_1: Point = Point {x: 0, y: 0};
         const POINT_2: Point = Point {x: 1, y: 1};
         const POINT_3: Point = Point {x: 1, y: 0};
-        const POINT_4: Point = Point {x: 1, y: 0};
+        const POINT_4: Point = Point {x: 0, y: 1};
 
         let distance = manhattan_distance(&POINT_2, &POINT_1);
         assert_eq!(distance, 2);
