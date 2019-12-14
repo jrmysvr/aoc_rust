@@ -7,6 +7,6 @@ Test
 > cargo run
 
 ## Solutions
-### [Day 1](day_1)
-### [Day 2](day_2)
-### [Day 3](day_3)
+### [Day 1](src/day_1.rs)
+### [Day 2](src/day_2.rs)
+### [Day 3](src/day_3.rs)
