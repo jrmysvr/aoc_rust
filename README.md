@@ -10,3 +10,4 @@ Test
 ### [Day 1](src/day_1.rs)
 ### [Day 2](src/day_2.rs)
 ### [Day 3](src/day_3.rs)
+### [Day 4](src/day_4.rs)
